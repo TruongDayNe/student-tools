@@ -13,18 +13,45 @@ divide(6, 3)     # 2.0
 
 `divide` raises `ValueError` với thông báo `cannot divide by zero` khi mẫu số bằng 0.
 
-## Converter
+## Converter Usage
+
+### Temperature Conversion
+
+Convert Celsius to Fahrenheit:
 
 ```python
-from student_tools.converter import (
-    celsius_to_fahrenheit,
-    fahrenheit_to_celsius,
-    kilometers_to_miles,
-    miles_to_kilometers,
-)
+from student_tools.converter import celsius_to_fahrenheit
 
-celsius_to_fahrenheit(0)  # 32
-fahrenheit_to_celsius(32)  # 0.0
+result = celsius_to_fahrenheit(0)
+print(result)
+```
+
+Expected result:
+
+```text
+32.0
+```
+
+Convert Fahrenheit to Celsius:
+
+```python
+from student_tools.converter import fahrenheit_to_celsius
+
+result = fahrenheit_to_celsius(32)
+print(result)
+```
+
+Expected result:
+
+```text
+0.0
+```
+
+### Distance Conversion
+
+```python
+from student_tools.converter import kilometers_to_miles, miles_to_kilometers
+
 kilometers_to_miles(10)
 miles_to_kilometers(10)
 ```
@@ -47,4 +74,3 @@ Chạy từ thư mục gốc của repository:
 ```bash
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
-

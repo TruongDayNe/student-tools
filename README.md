@@ -9,6 +9,12 @@ Student Tools là một bộ tiện ích Python nhỏ phục vụ việc học t
 - Đổi khoảng cách giữa kilomet và mile.
 - Kiểm tra dữ liệu số và chuỗi không rỗng.
 
+## Converter
+
+Student Tools hỗ trợ đổi nhiệt độ giữa Celsius và Fahrenheit, cùng với một số chuyển đổi khoảng cách thông dụng.
+
+Xem ví dụ sử dụng trong [docs/usage.md](docs/usage.md).
+
 ## Bắt đầu nhanh
 
 Yêu cầu Python 3.10 trở lên.
@@ -52,4 +58,3 @@ student-tools/
 ## Quy trình đóng góp
 
 Mỗi thay đổi nên bắt đầu từ một Issue, được thực hiện trên feature branch, có test, rồi gửi Pull Request để một thành viên khác review. Xem chi tiết trong [CONTRIBUTING.md](CONTRIBUTING.md).
-
