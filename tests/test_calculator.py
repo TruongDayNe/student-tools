@@ -24,6 +24,12 @@ class CalculatorTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "invalid numeric input"):
             divide("10", "x")
 
+    def test_numeric_strings_are_coerced_before_operation(self):
+        self.assertEqual(add("10", 2), 12)
+        self.assertEqual(subtract("5", "3"), 2)
+        self.assertEqual(multiply("2", 3), 6)
+        self.assertEqual(divide("10", "2"), 5)
+
 
 if __name__ == "__main__":
     unittest.main()
