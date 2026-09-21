@@ -5,13 +5,13 @@ Student Tools là một bộ tiện ích Python nhỏ phục vụ việc học t
 ## Tính năng
 
 - Các phép tính cơ bản: cộng, trừ, nhân, chia.
-- Đổi nhiệt độ giữa Celsius và Fahrenheit.
+- Đổi nhiệt độ giữa Celsius, Fahrenheit và Kelvin.
 - Đổi khoảng cách giữa kilomet và mile.
 - Kiểm tra dữ liệu số và chuỗi không rỗng.
 
 ## Converter
 
-Student Tools hỗ trợ đổi nhiệt độ giữa Celsius và Fahrenheit, cùng với một số chuyển đổi khoảng cách thông dụng.
+Student Tools hỗ trợ đổi nhiệt độ giữa Celsius, Fahrenheit và Kelvin, cùng với một số chuyển đổi khoảng cách thông dụng.
 
 Xem ví dụ sử dụng trong [docs/usage.md](docs/usage.md).
 

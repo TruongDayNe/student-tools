@@ -19,33 +19,33 @@ divide(6, 3)     # 2.0
 
 Convert Celsius to Fahrenheit:
 
-```python
-from student_tools.converter import celsius_to_fahrenheit
+from student_tools.converter import (
+    celsius_to_fahrenheit,
+    celsius_to_kelvin,
+    fahrenheit_to_celsius,
+    fahrenheit_to_kelvin,
+    kelvin_to_celsius,
+    kelvin_to_fahrenheit,
+)
 
-result = celsius_to_fahrenheit(0)
-print(result)
+# Celsius <-> Fahrenheit
+celsius_to_fahrenheit(0)    # 32.0
+celsius_to_fahrenheit(-40)  # -40.0
+fahrenheit_to_celsius(32)   # 0.0
+
+# Celsius <-> Kelvin
+celsius_to_kelvin(0)        # 273.15
+kelvin_to_celsius(273.15)   # 0.0
+
+# Fahrenheit <-> Kelvin
+fahrenheit_to_kelvin(32)    # 273.15
+kelvin_to_fahrenheit(273.15) # 32.0
 ```
 
-Expected result:
-
-```text
-32.0
-```
-
-Convert Fahrenheit to Celsius:
-
-```python
-from student_tools.converter import fahrenheit_to_celsius
-
-result = fahrenheit_to_celsius(32)
-print(result)
-```
-
-Expected result:
-
-```text
-0.0
-```
+Expected result examples:
+- `celsius_to_fahrenheit(0)` $\rightarrow$ `32.0`
+- `fahrenheit_to_celsius(32)` $\rightarrow$ `0.0`
+- `celsius_to_kelvin(0)` $\rightarrow$ `273.15`
 
 ### Distance Conversion
 
