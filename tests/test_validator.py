@@ -11,6 +11,9 @@ class ValidatorTests(unittest.TestCase):
         self.assertFalse(is_number(None))
         self.assertFalse(is_number(float("inf")))
 
+    def test_empty_string(self):
+        self.assertFalse(is_number(""))
+
     def test_validate_number_returns_float(self):
         self.assertEqual(validate_number("10"), 10.0)
         self.assertEqual(validate_number(10.5), 10.5)
