@@ -14,6 +14,16 @@ class CalculatorTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "cannot divide by zero"):
             divide(10, 0)
 
+    def test_invalid_numeric_input_raises_meaningful_error(self):
+        with self.assertRaisesRegex(ValueError, "invalid numeric input"):
+            add("abc", 2)
+        with self.assertRaisesRegex(ValueError, "invalid numeric input"):
+            subtract(1, None)
+        with self.assertRaisesRegex(ValueError, "invalid numeric input"):
+            multiply(float("inf"), 2)
+        with self.assertRaisesRegex(ValueError, "invalid numeric input"):
+            divide("10", "x")
+
 
 if __name__ == "__main__":
     unittest.main()
