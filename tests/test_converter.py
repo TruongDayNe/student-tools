@@ -31,6 +31,14 @@ class ConverterTests(unittest.TestCase):
         kilometers = meters_to_kilometers(2500)
         self.assertAlmostEqual(kilometers_to_meters(kilometers), 2500)
 
+    def test_length_conversion_zero(self):
+        self.assertEqual(meters_to_kilometers(0), 0)
+        self.assertEqual(kilometers_to_meters(0), 0)
+
+    def test_length_conversion_negative(self):
+        self.assertEqual(meters_to_kilometers(-1000), -1)
+        self.assertEqual(kilometers_to_meters(-1), -1000)
+
 
 if __name__ == "__main__":
     unittest.main()
