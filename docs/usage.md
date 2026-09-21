@@ -19,7 +19,9 @@ divide(6, 3)     # 2.0
 from student_tools.converter import (
     celsius_to_fahrenheit,
     fahrenheit_to_celsius,
+    kilometers_to_meters,
     kilometers_to_miles,
+    meters_to_kilometers,
     miles_to_kilometers,
 )
 
@@ -27,6 +29,8 @@ celsius_to_fahrenheit(0)  # 32
 fahrenheit_to_celsius(32)  # 0.0
 kilometers_to_miles(10)
 miles_to_kilometers(10)
+meters_to_kilometers(1000)  # 1.0
+kilometers_to_meters(1)     # 1000
 ```
 
 ## Validator
