@@ -67,6 +67,21 @@ is_non_empty("student") # True
 is_non_empty("   ")     # False
 ```
 
+## Input Validation
+
+The validator checks whether an input can be converted to a finite numeric value.
+
+```python
+from student_tools.validator import is_number, validate_number
+
+is_number("10")   # True
+is_number("abc")  # False
+is_number(None)    # False
+validate_number("10", field_name="score")  # 10.0
+```
+
+`validate_number` raises a `ValueError` with a clear message when the input is invalid.
+
 ## Chạy test
 
 Chạy từ thư mục gốc của repository:

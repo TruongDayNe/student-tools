@@ -11,7 +11,7 @@ from .converter import (
     kelvin_to_fahrenheit,
     miles_to_kilometers,
 )
-from .validator import is_non_empty, is_number
+from .validator import is_non_empty, is_number, validate_number
 
 __all__ = [
     "add",
@@ -28,5 +28,5 @@ __all__ = [
     "miles_to_kilometers",
     "is_non_empty",
     "is_number",
+    "validate_number",
 ]
-
