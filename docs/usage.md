@@ -18,13 +18,21 @@ divide(6, 3)     # 2.0
 ```python
 from student_tools.converter import (
     celsius_to_fahrenheit,
+    celsius_to_kelvin,
     fahrenheit_to_celsius,
+    fahrenheit_to_kelvin,
+    kelvin_to_celsius,
+    kelvin_to_fahrenheit,
     kilometers_to_miles,
     miles_to_kilometers,
 )
 
-celsius_to_fahrenheit(0)  # 32
-fahrenheit_to_celsius(32)  # 0.0
+celsius_to_fahrenheit(0)    # 32.0
+celsius_to_fahrenheit(-40)  # -40.0
+fahrenheit_to_celsius(32)   # 0.0
+celsius_to_kelvin(0)        # 273.15
+kelvin_to_celsius(273.15)   # 0.0
+fahrenheit_to_kelvin(32)    # 273.15
 kilometers_to_miles(10)
 miles_to_kilometers(10)
 ```
